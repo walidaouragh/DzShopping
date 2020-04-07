@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\DzShopping.Core.csproj",
+      "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\DzShopping.Core.csproj",
       "projectName": "DzShopping.Core",
-      "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\DzShopping.Core.csproj",
+      "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\DzShopping.Core.csproj",
       "packagesPath": "C:\\Users\\waouragh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\obj\\",
+      "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
