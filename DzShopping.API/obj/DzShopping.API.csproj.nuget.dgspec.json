@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\dzShopping.API\\DzShopping.API.csproj": {}
+    "C:\\Users\\waouragh\\Projects\\DzShopping\\dzShopping.API\\DzShopping.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\dzShopping.API\\DzShopping.API.csproj": {
+    "C:\\Users\\waouragh\\Projects\\DzShopping\\dzShopping.API\\DzShopping.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\dzShopping.API\\DzShopping.API.csproj",
+        "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\dzShopping.API\\DzShopping.API.csproj",
         "projectName": "DzShopping.API",
-        "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\dzShopping.API\\DzShopping.API.csproj",
+        "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\dzShopping.API\\DzShopping.API.csproj",
         "packagesPath": "C:\\Users\\waouragh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\dzShopping.API\\obj\\",
+        "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\dzShopping.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj"
+              "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\DzShopping.Core.csproj": {
+    "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\DzShopping.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\DzShopping.Core.csproj",
+        "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\DzShopping.Core.csproj",
         "projectName": "DzShopping.Core",
-        "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\DzShopping.Core.csproj",
+        "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\DzShopping.Core.csproj",
         "packagesPath": "C:\\Users\\waouragh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\obj\\",
+        "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj": {
+    "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj",
         "projectName": "DzShopping.Infrastructure",
-        "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Infrastructure\\DzShopping.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\waouragh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -162,8 +162,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\DzShopping.Core.csproj": {
-                "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.API\\DzShopping.Core\\DzShopping.Core.csproj"
+              "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\DzShopping.Core.csproj": {
+                "projectPath": "C:\\Users\\waouragh\\Projects\\DzShopping\\DzShopping.Core\\DzShopping.Core.csproj"
               }
             }
           }
