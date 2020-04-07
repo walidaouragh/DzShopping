@@ -1,0 +1,12 @@
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\bin\Debug\netstandard2.0\DzShopping.Infrastructure.deps.json
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\bin\Debug\netstandard2.0\DzShopping.Infrastructure.dll
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\bin\Debug\netstandard2.0\DzShopping.Infrastructure.pdb
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\bin\Debug\netstandard2.0\DzShopping.Core.dll
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\bin\Debug\netstandard2.0\DzShopping.Core.pdb
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\obj\Debug\netstandard2.0\DzShopping.Infrastructure.csprojAssemblyReference.cache
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\obj\Debug\netstandard2.0\DzShopping.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\obj\Debug\netstandard2.0\DzShopping.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\obj\Debug\netstandard2.0\DzShopping.Infrastructure.AssemblyInfo.cs
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\obj\Debug\netstandard2.0\DzShopping.Infrastructure.csproj.CopyComplete
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\obj\Debug\netstandard2.0\DzShopping.Infrastructure.dll
+C:\Users\waouragh\Projects\DzShopping\DzShopping.API\DzShopping.Infrastructure\obj\Debug\netstandard2.0\DzShopping.Infrastructure.pdb

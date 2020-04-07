@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="986feb78-b154-44ba-939e-dc35846491a6" name="Default Changelist" comment="test git">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping.API.dir/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping.API.dir/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping.API.dir/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping.API.dir/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping.API.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping.API.dir/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping.API.dir/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DzShopping/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/dzShopping/DesignTimeBuild/.dtbcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/dzShopping/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/dzShopping/config/applicationhost.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/dzShopping/v16/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/dzShopping/v16/Server/sqlite3/db.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/dzShopping/v16/Server/sqlite3/storage.ide" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/Controllers/ProductsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/Controllers/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/DzShopping.API.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/Startup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.API.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.API.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.API.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.API.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.API.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.Core.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/DzShopping.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Composition.AttributedModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Composition.Convention.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Composition.Hosting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Composition.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Composition.TypedParts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/dotnet-aspnet-codegenerator-design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.RazorTargetAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/staticwebassets/DzShopping.API.StaticWebAssets.Manifest.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/Debug/netcoreapp3.1/staticwebassets/DzShopping.API.StaticWebAssets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/DzShopping.API.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/DzShopping.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/DzShopping.API.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/DzShopping.API.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.API/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/DzShopping.Core.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/Models/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/bin/Debug/netstandard2.0/DzShopping.Core.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/bin/Debug/netstandard2.0/DzShopping.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/bin/Debug/netstandard2.0/DzShopping.Core.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/Debug/netstandard2.0/DzShopping.Core.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/DzShopping.Core.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/DzShopping.Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/DzShopping.Core.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/DzShopping.Core.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Core/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/DbContext/DzDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/DzShopping.Infrastructure.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/Migrations/20200406020101_initMig.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/Migrations/20200406020101_initMig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/Migrations/DzDbContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/Repositories/ProductRepository/IProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/Repositories/ProductRepository/ProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/bin/Debug/netstandard2.0/DzShopping.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/bin/Debug/netstandard2.0/DzShopping.Core.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/bin/Debug/netstandard2.0/DzShopping.Infrastructure.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/bin/Debug/netstandard2.0/DzShopping.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/bin/Debug/netstandard2.0/DzShopping.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/Debug/netstandard2.0/DzShopping.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/DzShopping.Infrastructure.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/DzShopping.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/DzShopping.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/DzShopping.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DzShopping.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aDy2KzaZCwp3pVurpd8brUEO4q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.DzShopping.API: dzShopping.API">
+    <configuration name="DzShopping.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/dzShopping.API/DzShopping.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DzShopping.API: dzShopping.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/dzShopping.API/DzShopping.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="dzShopping.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="986feb78-b154-44ba-939e-dc35846491a6" name="Default Changelist" comment="" />
+      <created>1586284250825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586284250825</updated>
+      <workItem from="1586284252969" duration="1175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
