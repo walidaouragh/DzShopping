@@ -338,10 +338,3 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-/DzShopping.sln
-/DzShopping.API/DzShopping.API.csproj
-'.idea' 
-DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.assets.cache
-
-DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.csprojAssemblyReference.cache
-DzShopping.API/obj/Debug/netcoreapp3.1/DzShopping.API.assets.cache
