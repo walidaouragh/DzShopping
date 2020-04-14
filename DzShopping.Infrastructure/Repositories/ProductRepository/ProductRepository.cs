@@ -1,6 +1,6 @@
 ﻿using DzShopping.Core.Models;
 using DzShopping.Infrastructure.DbContext;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,14 +15,22 @@ namespace DzShopping.Infrastructure.Repositories.ProductRepository
         {
             _dzDbContext = dzDbContext;
         }
-        public IQueryable<Product> GetProducts()
+
+        public async Task<IReadOnlyList<Product>> GetProducts()
         {
-            return _dzDbContext.Products;
+            return await _dzDbContext.Products
+                .Include(b => b.ProductBrand)
+                .Include(t => t.ProductType)
+                .ToListAsync();
         }
 
-        public IQueryable<Product> GetProduct(int productId)
+        public async Task<Product> GetProduct(int productId)
         {
-            return _dzDbContext.Products.Where(x => x.ProductId == productId);
+            return await _dzDbContext.Products
+                .Include(b => b.ProductBrand)
+                .Include(t => t.ProductType)
+                .Where(id => id.ProductId == productId)
+                .FirstOrDefaultAsync();
         }
     }
 }

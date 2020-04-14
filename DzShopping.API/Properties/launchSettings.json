@@ -19,7 +19,7 @@
     },
     "dzShopping.API": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger/ui/index.html",
       "applicationUrl": "https://localhost:5001",
       "environmentVariables": {

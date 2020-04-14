@@ -1,19 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using DzShopping.Infrastructure.DbContext;
+using DzShopping.Infrastructure.Repositories.ProductBrandRepository;
 using DzShopping.Infrastructure.Repositories.ProductRepository;
+using DzShopping.Infrastructure.Repositories.ProductTypeRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 
 namespace DzShopping.API
 {
@@ -31,10 +27,19 @@ namespace DzShopping.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<DzDbContext>(opt => opt.UseSqlServer(_configuration.GetSection("DzShopping")["ConnStr"]));
+            services.AddDbContext<DzDbContext>(opt =>
+                opt.UseSqlServer(_configuration.GetSection("DzShopping")["ConnStr"]));
             services.AddCors();
 
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
+            services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
+
+            // Nuget package enable retrieving long Jsons
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options =>
+                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                );
 
             services.AddSwaggerGen(c =>
             {
@@ -50,10 +55,7 @@ namespace DzShopping.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
             app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200"));
             app.UseHttpsRedirection();
@@ -62,10 +64,7 @@ namespace DzShopping.API
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
