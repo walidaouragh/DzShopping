@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DzShopping.Infrastructure.Migrations
 {
     [DbContext(typeof(DzDbContext))]
-    [Migration("20200414004512_init")]
-    partial class init
+    [Migration("20200414215458_initMig")]
+    partial class initMig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

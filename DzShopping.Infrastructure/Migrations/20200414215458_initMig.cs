@@ -2,7 +2,7 @@
 
 namespace DzShopping.Infrastructure.Migrations
 {
-    public partial class init : Migration
+    public partial class initMig : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -14,6 +14,7 @@ namespace DzShopping.API
     {
         public static async Task Main(string[] args)
         {
+            // Added this logic to update and seed database when we run migrations, no need to run database update after a migration
             CreateHostBuilder(args).Build();
             var host = CreateHostBuilder(args).Build();
             using (var scope = host.Services.CreateScope())
@@ -36,11 +37,10 @@ namespace DzShopping.API
             host.Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            return Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
+        }
     }
 }
