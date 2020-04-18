@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
+using DzShopping.API.Dtos;
 using DzShopping.Core.Models;
 using DzShopping.Core.Specifications.SpecificationClasses;
 using DzShopping.Infrastructure.Repositories.GenericRepository;
@@ -14,29 +16,33 @@ namespace DzShopping.API.Controllers
         private readonly IGenericRepository<Product> _productRepository;
         private readonly IGenericRepository<ProductBrand> _brandRepository;
         private readonly IGenericRepository<ProductType> _typeRepository;
+        private readonly IMapper _mapper;
 
         public GenericProductController(IGenericRepository<Product> productRepository,
-            IGenericRepository<ProductBrand> brandRepository, IGenericRepository<ProductType> typeRepository)
+            IGenericRepository<ProductBrand> brandRepository, IGenericRepository<ProductType> typeRepository,
+            IMapper mapper)
         {
             _productRepository = productRepository;
             _brandRepository = brandRepository;
             _typeRepository = typeRepository;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts()
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts()
         {
             var specification = new ProductsWithTypesAndBrandsSpecification();
 
             var products = await _productRepository.GetListWithSpecification(specification);
 
-            if (products != null && products.Count > 0) return Ok(products);
+            if (products != null && products.Count > 0)
+                return Ok(_mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
 
             return NoContent();
         }
 
         [HttpGet("{productId}")]
-        public async Task<ActionResult<Product>> GetProduct(int productId)
+        public async Task<ActionResult<ProductToReturnDto>> GetProduct(int productId)
         {
             var specification = new ProductsWithTypesAndBrandsSpecification(productId);
 
@@ -44,7 +50,7 @@ namespace DzShopping.API.Controllers
 
             if (product == null) return NotFound($"Product with id: {productId} does not exist");
 
-            return Ok(product);
+            return Ok(_mapper.Map<Product, ProductToReturnDto>(product));
         }
 
         [HttpGet("brands")]

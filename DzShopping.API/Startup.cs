@@ -1,4 +1,5 @@
-using System;
+using AutoMapper;
+using DzShopping.API.AutoMapper;
 using DzShopping.Infrastructure.DbContext;
 using DzShopping.Infrastructure.Repositories.GenericRepository;
 using DzShopping.Infrastructure.Repositories.ProductBrandRepository;
@@ -33,12 +34,14 @@ namespace DzShopping.API
                 opt.UseSqlServer(_configuration.GetSection("DzShopping")["ConnStr"]));
             services.AddCors();
 
+            services.AddAutoMapper(typeof(MappingProfiles));
+
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
             services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
 
             // This for generic repositories
-            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             // Nuget package enable retrieving long Jsons
             services.AddControllersWithViews()
@@ -66,6 +69,10 @@ namespace DzShopping.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            //To activate wwwroot files(I am saving images under wwwroot that I can get in postman)
+            //Needs to be after app.UseRouting()
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 
