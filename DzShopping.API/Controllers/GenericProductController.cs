@@ -9,9 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DzShopping.API.Controllers
 {
-    [Route("api/genericProduct")]
-    [ApiController]
-    public class GenericProductController : ControllerBase
+    public class GenericProductController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productRepository;
         private readonly IGenericRepository<ProductBrand> _brandRepository;
