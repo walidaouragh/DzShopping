@@ -1,4 +1,6 @@
+using System;
 using DzShopping.Infrastructure.DbContext;
+using DzShopping.Infrastructure.Repositories.GenericRepository;
 using DzShopping.Infrastructure.Repositories.ProductBrandRepository;
 using DzShopping.Infrastructure.Repositories.ProductRepository;
 using DzShopping.Infrastructure.Repositories.ProductTypeRepository;
@@ -34,6 +36,9 @@ namespace DzShopping.API
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
             services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
+
+            // This for generic repositories
+            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
 
             // Nuget package enable retrieving long Jsons
             services.AddControllersWithViews()
