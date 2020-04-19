@@ -5,16 +5,17 @@ namespace DzShopping.Core.Specifications.SpecificationClasses
     public class ProductsWithTypesAndBrandsSpecification : Specification<Product>
     {
         //without passing id, get everything
-        public ProductsWithTypesAndBrandsSpecification(string sort, int? brandId, int? typeId) : base(x =>
-            (brandId == null || brandId == x.ProductBrand.ProductBrandId) &&
-            (typeId == null || typeId == x.ProductType.ProductTypeId))
+        public ProductsWithTypesAndBrandsSpecification(ProductSpecificationParams productParams) : base(x =>
+            (productParams.BrandId == null || x.ProductBrand.ProductBrandId == productParams.BrandId) &&
+            (productParams.TypeId == null || x.ProductType.ProductTypeId == productParams.TypeId))
         {
             AddInclude(x => x.ProductType);
             AddInclude(x => x.ProductBrand);
             AddOrderBy(x => x.ProductName);
+            ApplyPaging(productParams.PageSize * (productParams.PageIndex - 1), productParams.PageSize);
 
-            if (!string.IsNullOrEmpty(sort))
-                switch (sort)
+            if (!string.IsNullOrEmpty(productParams.Sort))
+                switch (productParams.Sort)
                 {
                     case "priceAsc":
                         AddOrderBy(p => p.Price);

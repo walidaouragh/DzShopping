@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using DzShopping.API.Dtos;
 using DzShopping.API.Errors;
+using DzShopping.API.Helpers;
 using DzShopping.Core.Models;
 using DzShopping.Core.Specifications.SpecificationClasses;
 using DzShopping.Infrastructure.Repositories.GenericRepository;
@@ -28,16 +29,19 @@ namespace DzShopping.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort, int? brandId, int? typeId)
+        public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts(
+            [FromQuery] ProductSpecificationParams productParams)
         {
-            var specification = new ProductsWithTypesAndBrandsSpecification(sort, brandId, typeId);
+            var specification = new ProductsWithTypesAndBrandsSpecification(productParams);
+            var countSpecification = new ProductWithFiltersForCountSpecification(productParams);
+            var totalItemsCount = await _productRepository.CountAsync(countSpecification);
 
             var products = await _productRepository.GetListWithSpecification(specification);
 
-            if (products != null && products.Count > 0)
-                return Ok(_mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
+            var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
 
-            return NoContent();
+            return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex, productParams.PageSize,
+                totalItemsCount, data));
         }
 
         [HttpGet("{productId}")]

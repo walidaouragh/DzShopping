@@ -11,5 +11,6 @@ namespace DzShopping.Infrastructure.Repositories.GenericRepository
 
         Task<T> GetWithSpecification(ISpecification<T> specification);
         Task<IReadOnlyList<T>> GetListWithSpecification(ISpecification<T> specification);
+        Task<int> CountAsync(ISpecification<T> specification);
     }
 }

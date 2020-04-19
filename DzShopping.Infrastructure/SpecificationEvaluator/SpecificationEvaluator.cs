@@ -19,6 +19,9 @@ namespace DzShopping.Infrastructure.SpecificationEvaluator
             if (specification.OrderByDescending != null)
                 query = query.OrderByDescending(specification.OrderByDescending); // descending by price for instance!
 
+            if (specification.IsPagingEnabled)
+                query = query.Skip(specification.Skip).Take(specification.Take); // for pagination, pagination order after sorting and filtering is important 
+
             query = specification.Includes.Aggregate(query,
                 (current, include) => current.Include(include)); // example when : include(p => p.productBrand)
 
