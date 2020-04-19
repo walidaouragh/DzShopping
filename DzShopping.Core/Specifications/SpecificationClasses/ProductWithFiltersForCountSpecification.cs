@@ -6,6 +6,7 @@ namespace DzShopping.Core.Specifications.SpecificationClasses
     {
         //To get count of items
         public ProductWithFiltersForCountSpecification(ProductSpecificationParams productParams) : base(x =>
+            (string.IsNullOrEmpty(productParams.Search) || x.ProductName.ToLower().Contains(productParams.Search)) &&
             (productParams.BrandId == null || x.ProductBrand.ProductBrandId == productParams.BrandId) &&
             (productParams.TypeId == null || x.ProductType.ProductTypeId == productParams.TypeId))
         {
