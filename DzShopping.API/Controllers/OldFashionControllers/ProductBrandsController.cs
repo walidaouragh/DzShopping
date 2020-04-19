@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using DzShopping.Core.Models;
-using DzShopping.Infrastructure.Repositories.ProductBrandRepository;
+using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductBrandRepository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DzShopping.API.Controllers

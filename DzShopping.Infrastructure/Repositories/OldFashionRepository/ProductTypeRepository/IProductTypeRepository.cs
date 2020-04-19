@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using DzShopping.Core.Models;
 
-namespace DzShopping.Infrastructure.Repositories.ProductTypeRepository
+namespace DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductTypeRepository
 {
     public interface IProductTypeRepository
     {

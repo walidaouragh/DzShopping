@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace DzShopping.Infrastructure.Repositories.ProductBrandRepository
+namespace DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductBrandRepository
 {
     public interface IProductBrandRepository
     {

@@ -5,7 +5,7 @@ using DzShopping.Core.Models;
 using DzShopping.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
 
-namespace DzShopping.Infrastructure.Repositories.ProductBrandRepository
+namespace DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductBrandRepository
 {
     public class ProductBrandRepository : IProductBrandRepository
     {

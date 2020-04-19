@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DzShopping.Infrastructure.Repositories.ProductRepository
+namespace DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductRepository
 {
     public class ProductRepository : IProductRepository
     {
