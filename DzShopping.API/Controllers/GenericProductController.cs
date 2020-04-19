@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using AutoMapper;
 using DzShopping.API.Dtos;
+using DzShopping.API.Errors;
 using DzShopping.Core.Models;
 using DzShopping.Core.Specifications.SpecificationClasses;
 using DzShopping.Infrastructure.Repositories.GenericRepository;
@@ -46,7 +47,7 @@ namespace DzShopping.API.Controllers
 
             var product = await _productRepository.GetWithSpecification(specification);
 
-            if (product == null) return NotFound($"Product with id: {productId} does not exist");
+            if (product == null) return NotFound(new ApiResponse(404, $"Product with id: {productId} does not exist"));
 
             return Ok(_mapper.Map<Product, ProductToReturnDto>(product));
         }
@@ -66,7 +67,8 @@ namespace DzShopping.API.Controllers
         {
             var productBrand = await _brandRepository.GetByIdAsync(productBrandId);
 
-            if (productBrand == null) return NotFound($"Product brand with id: {productBrandId} does not exist");
+            if (productBrand == null)
+                return NotFound(new ApiResponse(404, $"Product brand with id: {productBrandId} does not exist"));
 
             return Ok(productBrand);
         }
@@ -86,7 +88,8 @@ namespace DzShopping.API.Controllers
         {
             var productType = await _typeRepository.GetByIdAsync(productTypeId);
 
-            if (productType == null) return NotFound($"Product type with id: {productTypeId} does not exist");
+            if (productType == null)
+                return NotFound(new ApiResponse(404, $"Product type with id: {productTypeId} does not exist"));
 
             return Ok(productType);
         }
