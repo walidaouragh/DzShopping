@@ -5,7 +5,9 @@ namespace DzShopping.Core.Specifications.SpecificationClasses
     public class ProductsWithTypesAndBrandsSpecification : Specification<Product>
     {
         //without passing id, get everything
-        public ProductsWithTypesAndBrandsSpecification(string sort)
+        public ProductsWithTypesAndBrandsSpecification(string sort, int? brandId, int? typeId) : base(x =>
+            (brandId == null || brandId == x.ProductBrand.ProductBrandId) &&
+            (typeId == null || typeId == x.ProductType.ProductTypeId))
         {
             AddInclude(x => x.ProductType);
             AddInclude(x => x.ProductBrand);
