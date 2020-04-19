@@ -1,21 +1,13 @@
-using System.Linq;
 using AutoMapper;
 using DzShopping.API.AutoMapper;
-using DzShopping.API.Errors;
+using DzShopping.API.Extensions;
 using DzShopping.API.Middleware;
 using DzShopping.Infrastructure.DbContext;
-using DzShopping.Infrastructure.Repositories.GenericRepository;
-using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductBrandRepository;
-using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductRepository;
-using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductTypeRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
-using Newtonsoft.Json;
 
 namespace DzShopping.API
 {
@@ -39,48 +31,9 @@ namespace DzShopping.API
 
             services.AddAutoMapper(typeof(MappingProfiles));
 
-            services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
-            services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
 
-            // This for generic repositories
-            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
-            // Nuget package enable retrieving long Jsons
-            services.AddControllersWithViews()
-                .AddNewtonsoftJson(options =>
-                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                );
-
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "DzShopping API",
-                    Description = "A simple example ASP.NET Core Web API"
-                });
-            });
-
-
-            //To handle endpoint does not exist error request
-            services.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.InvalidModelStateResponseFactory = actionContext =>
-                {
-                    var errors = actionContext.ModelState
-                        .Where(e => e.Value.Errors.Count > 0)
-                        .SelectMany(x => x.Value.Errors)
-                        .Select(x => x.ErrorMessage).ToArray();
-
-                    var errorResponse = new ApiValidationErrorResponse
-                    {
-                        Errors = errors
-                    };
-
-                    return new BadRequestObjectResult(errorResponse);
-                };
-            });
+            services.AddSwaggerDocumentations();
+            services.AddApplicationServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -106,12 +59,7 @@ namespace DzShopping.API
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My DzShopping API V1");
-                c.RoutePrefix = "swagger/ui";
-            });
+            app.UseSwaggerDocumentations();
         }
     }
 }
