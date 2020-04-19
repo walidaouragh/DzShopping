@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using DzShopping.API.Dtos;
-using DzShopping.API.Helpers;
 using DzShopping.Core.Models;
 
 namespace DzShopping.API.AutoMapper

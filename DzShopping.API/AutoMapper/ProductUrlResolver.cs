@@ -3,7 +3,7 @@ using DzShopping.API.Dtos;
 using DzShopping.Core.Models;
 using Microsoft.Extensions.Configuration;
 
-namespace DzShopping.API.Helpers
+namespace DzShopping.API.AutoMapper
 {
     //Adding custom value resolver for autoMapper
     //IValueResolver is a mapper interface(in my case I have an apiUrl in appSettings.json and I need to add it to the stored url in db to return to the client)
