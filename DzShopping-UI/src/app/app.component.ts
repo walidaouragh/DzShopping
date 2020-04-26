@@ -8,9 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
     constructor(private http: HttpClient) {}
+    title = 'Dz Shopping';
     ngOnInit() {
-        return this.http.get('https://localhost:5001/api/products').subscribe((p) => {
-            console.log('*-*-*-*-*-', p);
-        });
     }
 }
