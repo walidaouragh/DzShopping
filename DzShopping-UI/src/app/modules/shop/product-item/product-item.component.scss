@@ -5,13 +5,11 @@
 .btn {
     width: 50%;
 }
-.img-fluid {
+.product-image {
     background-color: #d3d3d38c;
-}
-img {
     cursor: pointer;
-}
 
-img:hover {
-    background-color: gray;
+    &:hover {
+        background-color: gray;
+    }
 }
