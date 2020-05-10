@@ -9,6 +9,7 @@
             <ul class="list-group" *ngFor="let item of brands">
                 <li
                     class="list-group-item"
+                    style="cursor: pointer;"
                     [class.active]="item.productBrandId === shopParams.brandId"
                     [value]="item.productBrandId"
                     (click)="onBrandSelected(item.productBrandId)"
@@ -20,6 +21,7 @@
             <ul class="list-group" *ngFor="let item of types">
                 <li
                     class="list-group-item"
+                    style="cursor: pointer;"
                     [class.active]="item.productTypeId === shopParams.typeId"
                     [value]="item.productTypeId"
                     (click)="onTypeSelected(item.productTypeId)"

@@ -6,11 +6,16 @@ const routes: Routes = [
     { path: '', component: HomeComponent },
     {
         path: 'shop',
-        loadChildren: () => import('./modules/shop/shop.module').then((mod) => mod.ShopModule)
+        loadChildren: () => import('./modules/shop/shop.module').then((mod) => mod.ShopModule),
     },
     {
         path: 'contact',
-        loadChildren: () => import('./modules/contact/contact.module').then((mod) => mod.ContactModule)
+        loadChildren: () => import('./modules/contact/contact.module').then((mod) => mod.ContactModule),
+    },
+    {
+        path: '**',
+        redirectTo: '',
+        pathMatch: 'full',
     },
 ];
 

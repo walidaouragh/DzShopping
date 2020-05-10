@@ -8,3 +8,10 @@
 .img-fluid {
     background-color: #d3d3d38c;
 }
+img {
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: gray;
+}
