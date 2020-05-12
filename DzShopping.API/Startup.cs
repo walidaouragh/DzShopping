@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StackExchange.Redis;
 
 namespace DzShopping.API
 {
@@ -27,6 +28,14 @@ namespace DzShopping.API
             services.AddControllers();
             services.AddDbContext<DzDbContext>(opt =>
                 opt.UseSqlServer(_configuration.GetSection("DzShopping")["ConnStr"]));
+
+            // Add redis for saving cart items
+            services.AddSingleton(c =>
+            {
+                var configuration = ConfigurationOptions.Parse(_configuration.GetSection("DzShopping")["Redis"], true);
+                return ConnectionMultiplexer.Connect(configuration);
+            });
+
             services.AddCors();
 
             services.AddAutoMapper(typeof(MappingProfiles));
