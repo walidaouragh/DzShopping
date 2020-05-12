@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using DzShopping.API.Errors;
+using DzShopping.Infrastructure.Repositories.CartRepository;
 using DzShopping.Infrastructure.Repositories.GenericRepository;
 using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductBrandRepository;
 using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductRepository;
@@ -17,6 +18,7 @@ namespace DzShopping.API.Extensions
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
             services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
+            services.AddScoped<ICartRepository, CartRepository>();
 
             // This for generic repositories
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
