@@ -30,7 +30,7 @@ namespace DzShopping.API
                 opt.UseSqlServer(_configuration.GetSection("DzShopping")["ConnStr"]));
 
             // Add redis for saving cart items
-            services.AddSingleton(c =>
+            services.AddSingleton<IConnectionMultiplexer>(c =>
             {
                 var configuration = ConfigurationOptions.Parse(_configuration.GetSection("DzShopping")["Redis"], true);
                 return ConnectionMultiplexer.Connect(configuration);
