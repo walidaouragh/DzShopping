@@ -6,17 +6,19 @@ import { ServerErrorComponent } from './core/server-error/server-error.component
 import { NotFoundErrorComponent } from './core/not-found-error/not-found-error.component';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'test-error', component: TestErrorComponent },
-    { path: 'server-error', component: ServerErrorComponent },
-    { path: 'not-found-error', component: NotFoundErrorComponent },
+    { path: '', component: HomeComponent, data: { breadcrumb: 'Home' } },
+    { path: 'test-error', component: TestErrorComponent, data: { breadcrumb: 'Test Error' } },
+    { path: 'server-error', component: ServerErrorComponent, data: { breadcrumb: 'Server Error' } },
+    { path: 'not-found-error', component: NotFoundErrorComponent, data: { breadcrumb: 'Not Fount Error' } },
     {
         path: 'shop',
         loadChildren: () => import('./modules/shop/shop.module').then((mod) => mod.ShopModule),
+        data: { breadcrumb: 'Shop' },
     },
     {
         path: 'contact',
         loadChildren: () => import('./modules/contact/contact.module').then((mod) => mod.ContactModule),
+        data: { breadcrumb: 'Contact' },
     },
     {
         path: '**',

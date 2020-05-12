@@ -14,7 +14,7 @@ import { ShopParams } from '../../shared/models/shopParams';
 export class ShopComponent implements OnInit {
     constructor(private shopService: ShopService) {}
 
-    @ViewChild('search', { static: true }) searchTerm: ElementRef;
+    @ViewChild('search', { static: false }) searchTerm: ElementRef;
 
     public shopParams = new ShopParams();
     public products: IProduct[];
