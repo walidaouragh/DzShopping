@@ -21,6 +21,16 @@ const routes: Routes = [
         data: { breadcrumb: 'Contact' },
     },
     {
+        path: 'cart',
+        loadChildren: () => import('./modules/cart/cart.module').then((mod) => mod.CartModule),
+        data: { breadcrumb: 'Cart' },
+    },
+    {
+        path: 'checkout',
+        loadChildren: () => import('./modules/checkout/checkout.module').then((mod) => mod.CheckoutModule),
+        data: { breadcrumb: 'Checkout' },
+    },
+    {
         path: '**',
         redirectTo: '',
         pathMatch: 'full',

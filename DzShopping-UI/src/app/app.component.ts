@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from './modules/cart/cart.service';
 
 @Component({
     selector: 'app-root',
@@ -6,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    constructor() {}
+    constructor(private cartService: CartService) {}
     title = 'Dz Shopping';
-    ngOnInit() {}
+    ngOnInit() {
+        const cartId = localStorage.getItem('cart_id');
+        if (cartId) {
+            this.cartService.getCart(cartId).subscribe(
+                () => {},
+                (error) => {
+                    console.log(error);
+                }
+            );
+        }
+    }
 }
