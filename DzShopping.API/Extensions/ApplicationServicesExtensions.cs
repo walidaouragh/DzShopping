@@ -5,6 +5,8 @@ using DzShopping.Infrastructure.Repositories.GenericRepository;
 using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductBrandRepository;
 using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductRepository;
 using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductTypeRepository;
+using DzShopping.Infrastructure.Services;
+using DzShopping.Infrastructure.Services.AccountService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
@@ -19,6 +21,8 @@ namespace DzShopping.API.Extensions
             services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
             services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
             services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IAccountService, AccountService>();
 
             // This for generic repositories
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));

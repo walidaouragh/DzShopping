@@ -1,8 +1,10 @@
 using System;
 using System.Threading.Tasks;
+using DzShopping.Core.Models.Identity;
 using DzShopping.Infrastructure;
 using DzShopping.Infrastructure.DbContext;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +28,12 @@ namespace DzShopping.API
                     var context = services.GetRequiredService<DzDbContext>();
                     await context.Database.MigrateAsync();
                     await DzContextSeed.SeedDzDb(context, loggerFactory);
+
+                    // To seed identity db
+                    var userManager = services.GetRequiredService<UserManager<AppUser>>();
+                    var identityContext = services.GetRequiredService<AppIdentityDbContext>();
+                    await identityContext.Database.MigrateAsync();
+                    await IdentityDbContextSeed.SeedUsersAsync(userManager);
                 }
                 catch (Exception ex)
                 {

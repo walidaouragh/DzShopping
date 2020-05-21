@@ -29,6 +29,9 @@ namespace DzShopping.API
             services.AddDbContext<DzDbContext>(opt =>
                 opt.UseSqlServer(_configuration.GetSection("DzShopping")["ConnStr"]));
 
+            services.AddDbContext<AppIdentityDbContext>(opt =>
+                opt.UseSqlServer(_configuration.GetSection("DzShopping")["UsersConnStr"]));
+
             // Add redis for saving cart items
             services.AddSingleton<IConnectionMultiplexer>(c =>
             {
@@ -43,6 +46,7 @@ namespace DzShopping.API
 
             services.AddSwaggerDocumentations();
             services.AddApplicationServices();
+            services.AddIdentityServices(_configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,6 +68,8 @@ namespace DzShopping.API
             //Needs to be after app.UseRouting()
             app.UseStaticFiles();
 
+            // UseAuthentication() always needs to be before UseAuthorization()
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });

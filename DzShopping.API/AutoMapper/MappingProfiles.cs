@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DzShopping.API.Dtos;
 using DzShopping.Core.Models;
+using DzShopping.Core.Models.Identity;
 
 namespace DzShopping.API.AutoMapper
 {
@@ -14,6 +15,8 @@ namespace DzShopping.API.AutoMapper
 
                 //This is where we apply custom value resolver for autoMapper
                 .ForMember(p => p.PictureUrl, opt => opt.MapFrom<ProductUrlResolver>());
+
+            CreateMap<Address, AddressDto>().ReverseMap();
         }
     }
 }
