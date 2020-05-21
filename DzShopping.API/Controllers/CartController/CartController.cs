@@ -1,4 +1,6 @@
 ﻿using System.Threading.Tasks;
+using AutoMapper;
+using DzShopping.API.Dtos;
 using DzShopping.Core.Models;
 using DzShopping.Infrastructure.Repositories.CartRepository;
 using Microsoft.AspNetCore.Mvc;
@@ -8,10 +10,12 @@ namespace DzShopping.API.Controllers.CartController
     public class CartController : BaseApiController
     {
         private readonly ICartRepository _cartRepository;
+        private readonly IMapper _mapper;
 
-        public CartController(ICartRepository cartRepository)
+        public CartController(ICartRepository cartRepository, IMapper mapper)
         {
             _cartRepository = cartRepository;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -22,9 +26,10 @@ namespace DzShopping.API.Controllers.CartController
         }
 
         [HttpPost]
-        public async Task<ActionResult<CustomerCart>> UpdateCart(CustomerCart cart)
+        public async Task<ActionResult<CustomerCart>> UpdateCart(CustomerCartDto cart)
         {
-            var updatedCart = await _cartRepository.UpdateCartAsync(cart);
+            var customerCart = _mapper.Map<CustomerCartDto, CustomerCart>(cart);
+            var updatedCart = await _cartRepository.UpdateCartAsync(customerCart);
             return Ok(updatedCart);
         }
 

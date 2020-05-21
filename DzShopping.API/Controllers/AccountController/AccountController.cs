@@ -84,7 +84,7 @@ namespace DzShopping.API.Controllers.AccountController
             {
                 return Unauthorized(new ApiResponse(401));
             }
-            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.password, false);
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
 
             if (!result.Succeeded)
             {
@@ -101,15 +101,24 @@ namespace DzShopping.API.Controllers.AccountController
         [HttpPost("register")]
         public async Task<ActionResult<userDto>> Register(RegisterDto registerDto)
         {
+            if (CheckEmailExistsAsync(registerDto.Email).Result.Value)
+            {
+                return new BadRequestObjectResult(new ApiValidationErrorResponse()
+                {
+                    Errors = new[]
+                    { $"{registerDto.Email} already exists" }
+                });
+             }
+
             var user = new AppUser()
             {
                 DisplayName = registerDto.DisplayName,
                 UserName = registerDto.Email,
                 Email = registerDto.Email,
-                PasswordHash = registerDto.password
+                PasswordHash = registerDto.Password
             };
 
-            var result = await _userManager.CreateAsync(user, registerDto.password);
+            var result = await _userManager.CreateAsync(user, registerDto.Password);
 
             if (!result.Succeeded)
             {

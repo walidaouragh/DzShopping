@@ -17,6 +17,9 @@ namespace DzShopping.API.AutoMapper
                 .ForMember(p => p.PictureUrl, opt => opt.MapFrom<ProductUrlResolver>());
 
             CreateMap<Address, AddressDto>().ReverseMap();
+
+            CreateMap<CustomerCartDto, CustomerCart>();
+            CreateMap<CartItemDto, CartItem>();
         }
     }
 }
