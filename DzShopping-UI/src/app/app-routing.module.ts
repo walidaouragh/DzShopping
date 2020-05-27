@@ -4,6 +4,8 @@ import { HomeComponent } from './modules/home/home.component';
 import { TestErrorComponent } from './core/test-error/test-error.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
 import { NotFoundErrorComponent } from './core/not-found-error/not-found-error.component';
+import { skip } from 'rxjs/operators';
+import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
     { path: '', component: HomeComponent, data: { breadcrumb: 'Home' } },
@@ -27,8 +29,14 @@ const routes: Routes = [
     },
     {
         path: 'checkout',
+        canActivate: [AuthGuard],
         loadChildren: () => import('./modules/checkout/checkout.module').then((mod) => mod.CheckoutModule),
         data: { breadcrumb: 'Checkout' },
+    },
+    {
+        path: 'account',
+        loadChildren: () => import('./modules/account/account.module').then((mod) => mod.AccountModule),
+        data: { breadcrumb: { skip: true } },
     },
     {
         path: '**',

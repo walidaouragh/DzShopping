@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from './modules/cart/cart.service';
+import { AccountService } from './modules/account/account.service';
 
 @Component({
     selector: 'app-root',
@@ -7,9 +8,14 @@ import { CartService } from './modules/cart/cart.service';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    constructor(private cartService: CartService) {}
+    constructor(private cartService: CartService, private accountService: AccountService) {}
     title = 'Dz Shopping';
     ngOnInit() {
+        this.loadCart();
+        this.loadCurrentUser();
+    }
+
+    public loadCart() {
         const cartId = localStorage.getItem('cart_id');
         if (cartId) {
             this.cartService.getCart(cartId).subscribe(
@@ -19,5 +25,16 @@ export class AppComponent implements OnInit {
                 }
             );
         }
+    }
+
+    public loadCurrentUser() {
+        const token = localStorage.getItem('token');
+
+        this.accountService.loadCurrentUser(token).subscribe(
+            () => {},
+            (error) => {
+                console.log(error);
+            }
+        );
     }
 }
