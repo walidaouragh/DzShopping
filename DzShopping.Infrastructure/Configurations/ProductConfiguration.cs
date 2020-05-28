@@ -2,7 +2,7 @@ using DzShopping.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DzShopping.Infrastructure.ProductConfiguration
+namespace DzShopping.Infrastructure.Configuration
 {
     public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {

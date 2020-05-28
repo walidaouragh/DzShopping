@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using DzShopping.Core.Models;
+using DzShopping.Core.Models.OrderAggregate;
 using Microsoft.EntityFrameworkCore;
 
 namespace DzShopping.Infrastructure.DbContext
@@ -11,6 +12,10 @@ namespace DzShopping.Infrastructure.DbContext
 
         public DbSet<ProductBrand> ProductBrands { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<DeliveryMethod> DeliveryMethods { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

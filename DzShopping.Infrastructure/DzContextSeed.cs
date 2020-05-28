@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using DzShopping.Core.Models;
+using DzShopping.Core.Models.OrderAggregate;
 using DzShopping.Infrastructure.DbContext;
 using Microsoft.Extensions.Logging;
 
@@ -48,6 +49,18 @@ namespace DzShopping.Infrastructure
                     var products = JsonSerializer.Deserialize<List<Product>>(productsData);
 
                     foreach (var item in products) context.Products.Add(item);
+
+                    await context.SaveChangesAsync();
+                }
+
+                if (!context.DeliveryMethods.Any())
+                {
+                    var deliveryMethodsData =
+                        File.ReadAllText("../DzShopping.Infrastructure/SeedData/delivery.json");
+
+                    var deliveryMethods = JsonSerializer.Deserialize<List<DeliveryMethod>>(deliveryMethodsData);
+
+                    foreach (var item in deliveryMethods) context.DeliveryMethods.Add(item);
 
                     await context.SaveChangesAsync();
                 }

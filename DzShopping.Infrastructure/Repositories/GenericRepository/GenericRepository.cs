@@ -47,5 +47,21 @@ namespace DzShopping.Infrastructure.Repositories.GenericRepository
             return SpecificationEvaluator<T>.GetQuery(_dzDbContext.Set<T>().AsQueryable(),
                 specification);
         }
+
+        public void Add(T entity)
+        {
+            _dzDbContext.Set<T>().Add(entity);
+        }
+
+        public void Update(T entity)
+        {
+            _dzDbContext.Set<T>().Attach(entity);
+            _dzDbContext.Entry(entity).State = EntityState.Modified;
+        }
+
+        public void Delete(T entity)
+        {
+            _dzDbContext.Set<T>().Remove(entity); 
+        }
     }
 }
