@@ -1,0 +1,38 @@
+<ng-container *ngIf="orders">
+    <div class="container table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="border-0 bg-light" scope="col">
+                        <div class="p-2 px-3 text-uppercase">Order</div>
+                    </th>
+                    <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase bg-light">Date</div>
+                    </th>
+                    <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase">Total</div>
+                    </th>
+                    <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase">Status</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of orders" (click)="orderDetails(item.id)" style="cursor: pointer;">
+                    <td class="align-middle">
+                        <strong>{{ item.id }}</strong>
+                    </td>
+                    <td class="align-middle">
+                        <strong>{{ item.orderDate | date: 'medium' }}</strong>
+                    </td>
+                    <td class="align-middle">
+                        <strong>{{ item.total | currency }}</strong>
+                    </td>
+                    <td class="align-middle">
+                        <strong>{{ item.status }}</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</ng-container>

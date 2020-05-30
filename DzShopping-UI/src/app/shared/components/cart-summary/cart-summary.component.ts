@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { CartService } from 'src/app/modules/cart/cart.service';
-import { Observable } from 'rxjs';
-import { ICart, ICartItem } from '../../models/ICart';
+import { ICartItem } from '../../models/ICart';
+import { IOrderItem } from '../../models/IOrderToCreate';
 
 @Component({
     selector: 'app-cart-summary',
@@ -9,19 +8,17 @@ import { ICart, ICartItem } from '../../models/ICart';
     styleUrls: ['./cart-summary.component.scss'],
 })
 export class CartSummaryComponent implements OnInit {
-    constructor(private cartService: CartService) {}
+    constructor() {}
 
     @Output() decrement: EventEmitter<ICartItem> = new EventEmitter<ICartItem>();
     @Output() increment: EventEmitter<ICartItem> = new EventEmitter<ICartItem>();
     @Output() remove: EventEmitter<ICartItem> = new EventEmitter<ICartItem>();
 
+    @Input() items: ICartItem[] | IOrderItem[] = [];
     @Input() isCart = true;
+    @Input() isOrder = false;
 
-    cart$: Observable<ICart>;
-
-    ngOnInit() {
-        this.cart$ = this.cartService.cart$;
-    }
+    ngOnInit() {}
 
     public decrementItemQuantity(item: ICartItem): void {
         this.decrement.emit(item);
