@@ -8,6 +8,7 @@ using DzShopping.Infrastructure.Repositories.OldFashionRepository.ProductTypeRep
 using DzShopping.Infrastructure.Services;
 using DzShopping.Infrastructure.Services.AccountService;
 using DzShopping.Infrastructure.Services.OrderService;
+using DzShopping.Infrastructure.Services.PaymentService;
 using DzShopping.Infrastructure.UnitOfWork;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +28,7 @@ namespace DzShopping.API.Extensions
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IPaymentService, PaymentService>();
 
             // This for generic repositories
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));

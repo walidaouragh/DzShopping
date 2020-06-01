@@ -26,6 +26,7 @@ export class CartService {
         return this.http.get<ICart>(this.baseUrl + `cart?cartId=${cartId}`).pipe(
             map((cart: ICart) => {
                 this.cartSource.next(cart);
+                this.shipping = cart.shippingPrice;
                 this.calculateTotals();
             })
         );
@@ -109,7 +110,19 @@ export class CartService {
 
     public setShippingPrice(deliveryMethod: IDeliveryMethod) {
         this.shipping = deliveryMethod.price;
+        const cart = this.getCurrentCartValue();
+        cart.deliveryMethodId = deliveryMethod.id;
+        cart.shippingPrice = deliveryMethod.price;
         this.calculateTotals();
+        this.setCart(cart);
+    }
+
+    public createPaymentIntent() {
+        return this.http.post(this.baseUrl + `payments/${this.getCurrentCartValue().cartId}`, {}).pipe(
+            map((cart: ICart) => {
+                this.cartSource.next(cart);
+            })
+        );
     }
 
     private mapProductItemToCartItem(item: IProduct, quantity: number): ICartItem {

@@ -34,7 +34,6 @@ const routes: Routes = [
     },
     {
         path: 'account',
-        canActivate: [AuthGuard],
         loadChildren: () => import('./modules/account/account.module').then((mod) => mod.AccountModule),
         data: { breadcrumb: { skip: true } },
     },
