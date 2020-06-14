@@ -59,7 +59,7 @@ namespace DzShopping.API
             //Then execute in ErrorController
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
-            app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200"));
+            app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200").AllowAnyOrigin());
             app.UseHttpsRedirection();
 
             app.UseRouting();

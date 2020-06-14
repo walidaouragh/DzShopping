@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ICart } from 'src/app/shared/models/ICart';
 import { CartService } from '../../cart/cart.service';
 import { ToastrService } from 'ngx-toastr';
+import { CdkStepper } from '@angular/cdk/stepper';
 
 @Component({
     selector: 'app-checkout-review',
@@ -12,6 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 export class CheckoutReviewComponent implements OnInit {
     constructor(private cartService: CartService, private toastr: ToastrService) {}
 
+    @Input() appStepper: CdkStepper;
     public cart$: Observable<ICart>;
 
     ngOnInit() {
@@ -20,11 +22,10 @@ export class CheckoutReviewComponent implements OnInit {
 
     public createPaymentIntent(): void {
         this.cartService.createPaymentIntent().subscribe(
-            (response: any) => {
-                this.toastr.success('Success');
+            () => {
+                this.appStepper.next();
             },
             (error) => {
-                this.toastr.error(error.message);
                 console.log(error);
             }
         );

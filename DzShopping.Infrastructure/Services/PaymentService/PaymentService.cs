@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DzShopping.Core.Specifications.SpecificationClasses;
+using Order = DzShopping.Core.Models.OrderAggregate.Order;
 using Product = DzShopping.Core.Models.Product;
 
 namespace DzShopping.Infrastructure.Services.PaymentService
@@ -31,6 +33,11 @@ namespace DzShopping.Infrastructure.Services.PaymentService
             StripeConfiguration.ApiKey = _configuration["StripeSettings:SecretKey"];
 
             var cart = await _cartRepository.GetCartAsync(cartId);
+
+            if (cart == null)
+            {
+                return null;
+            }
 
             // m for money
             var shippingPrice = 0m;
@@ -82,6 +89,34 @@ namespace DzShopping.Infrastructure.Services.PaymentService
             await _cartRepository.UpdateCartAsync(cart);
 
             return cart;
+        }
+
+        public async Task<Order> UpdateOrderPaymentSucceeded(string paymentIntentId)
+        {
+            var specification = new OrderByPaymentIdWithSpecification(paymentIntentId);
+            var order = await _unitOfWork.Repository<Order>().GetWithSpecification(specification);
+
+            if (order == null) return null;
+
+            order.Status = OrderStatus.PaymentRecevied;
+            _unitOfWork.Repository<Order>().Update(order);
+
+            await _unitOfWork.Complete();
+
+            return order;
+        }
+
+        public async Task<Order> UpdateOrderPaymentFailed(string paymentIntentId)
+        {
+            var specification = new OrderByPaymentIdWithSpecification(paymentIntentId);
+            var order = await _unitOfWork.Repository<Order>().GetWithSpecification(specification);
+
+            if (order == null) return null;
+
+            order.Status = OrderStatus.PaymentFailed;
+            await _unitOfWork.Complete();
+
+            return order;
         }
     }
 }
