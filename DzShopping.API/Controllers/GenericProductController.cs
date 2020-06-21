@@ -28,6 +28,7 @@ namespace DzShopping.API.Controllers
             _mapper = mapper;
         }
 
+        [Cached(600)]
         [HttpGet]
         public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts(
             [FromQuery] ProductSpecificationParams productParams)
@@ -44,6 +45,7 @@ namespace DzShopping.API.Controllers
                 totalItemsCount, data));
         }
 
+        [Cached(600)]
         [HttpGet("{productId}")]
         public async Task<ActionResult<ProductToReturnDto>> GetProduct(int productId)
         {
@@ -56,6 +58,7 @@ namespace DzShopping.API.Controllers
             return Ok(_mapper.Map<Product, ProductToReturnDto>(product));
         }
 
+        [Cached(600)]
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
         {
@@ -66,6 +69,7 @@ namespace DzShopping.API.Controllers
             return NoContent();
         }
 
+        [Cached(600)]
         [HttpGet("brands/{productBrandId}")]
         public async Task<ActionResult<ProductBrand>> GetProductBrand(int productBrandId)
         {
@@ -77,6 +81,7 @@ namespace DzShopping.API.Controllers
             return Ok(productBrand);
         }
 
+        [Cached(600)]
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes()
         {
@@ -87,6 +92,7 @@ namespace DzShopping.API.Controllers
             return NoContent();
         }
 
+        [Cached(600)]
         [HttpGet("types/{productTypeId}")]
         public async Task<ActionResult<ProductType>> GetProductType(int productTypeId)
         {

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DzShopping.Core", "DzShoppi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DzShopping.Infrastructure", "DzShopping.Infrastructure\DzShopping.Infrastructure.csproj", "{F37DD958-4602-46E4-A506-CA490185AAD7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "microservices", "microservices", "{8D29DC29-3634-441A-994F-41AC8DCDC97E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,5 +63,10 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86DF136B-E015-4E8F-8F13-D5A5B623FE20}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{786572D0-9D9F-4E6A-8B70-C6C965D17681} = {8D29DC29-3634-441A-994F-41AC8DCDC97E}
+		{1EF9750A-40C1-421B-B487-8612D8DE0F07} = {8D29DC29-3634-441A-994F-41AC8DCDC97E}
+		{F37DD958-4602-46E4-A506-CA490185AAD7} = {8D29DC29-3634-441A-994F-41AC8DCDC97E}
 	EndGlobalSection
 EndGlobal

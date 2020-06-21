@@ -9,6 +9,7 @@ using DzShopping.Infrastructure.Services;
 using DzShopping.Infrastructure.Services.AccountService;
 using DzShopping.Infrastructure.Services.OrderService;
 using DzShopping.Infrastructure.Services.PaymentService;
+using DzShopping.Infrastructure.Services.ResponseCacheService;
 using DzShopping.Infrastructure.UnitOfWork;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +30,12 @@ namespace DzShopping.API.Extensions
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IPaymentService, PaymentService>();
+
+            //We want this ready and available when the application starts and shared across all requests
+            //We don't need this scoped to a single request
+            // ==> AddScoped for single requests
+            // ==> AddSingleton for all requests
+            services.AddSingleton<IResponseCacheService, ResponseCacheService>();
 
             // This for generic repositories
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
